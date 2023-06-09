@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "admin",
+						"type": "address"
+					}
+				],
+				"name": "OnlyAdminError",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"service/ServiceContract.sol": "ServiceContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"data/DataContract.sol": {
+			"keccak256": "0xc85b1085757c24d79fd8ea6f6b2b966af43e8e060b00ac976ad9578506227bf9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://45f8faeecfbb07b3442c4b66cbe4810e495857f6906051cc67e22e4167831646",
+				"dweb:/ipfs/QmUWBuWrnJAyaidrEnGKgv6idqyLCXogkxGshqupuSg9DR"
+			]
+		},
+		"service/ServiceContract.sol": {
+			"keccak256": "0xca34396943b18613bbd93261b8a79b744a678054c342af36f7df575942920e23",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7ca4a11a8d0eceaf48d4fcdcbd736296ff83079d5cc57c7b14862e52998c9297",
+				"dweb:/ipfs/QmUDqbjGFtLXKsRuqFjGMxZtzzCjbLN1mRpCAvcka1ev1J"
+			]
+		}
+	},
+	"version": 1
+}

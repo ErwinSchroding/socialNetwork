@@ -1,0 +1,114 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {
+				"@_119": {
+					"entryPoint": null,
+					"id": 119,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				}
+			},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b5033600a60006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603f80605e6000396000f3fe6080604052600080fdfea26469706673582212209b161b1c7dc2f56b26a7e05b22e6d4881bf969b7ff91ddfdbdcf84ae93507c6064736f6c63430008120033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLER PUSH1 0xA PUSH1 0x0 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP PUSH1 0x3F DUP1 PUSH1 0x5E PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP12 AND SHL SHR PUSH30 0xC2F56B26A7E05B22E6D4881BF969B7FF91DDFDBDCF84AE93507C6064736F PUSH13 0x63430008120033000000000000 ",
+			"sourceMap": "936:10906:0:-:0;;;4158:49;;;;;;;;;;4190:10;4182:5;;:18;;;;;;;;;;;;;;;;;;936:10906;;;;;;"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "6080604052600080fdfea26469706673582212209b161b1c7dc2f56b26a7e05b22e6d4881bf969b7ff91ddfdbdcf84ae93507c6064736f6c63430008120033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP12 AND SHL SHR PUSH30 0xC2F56B26A7E05B22E6D4881BF969B7FF91DDFDBDCF84AE93507C6064736F PUSH13 0x63430008120033000000000000 ",
+			"sourceMap": "936:10906:0:-:0;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "12600",
+				"executionCost": "24332",
+				"totalCost": "36932"
+			},
+			"internal": {
+				"checkAccountAndAccountIsFriend(address,address)": "infinite",
+				"checkAccountRegisted(address)": "infinite",
+				"checkAddressAndAccountIsFriend(address,address)": "infinite",
+				"checkAddressJoined(address)": "infinite",
+				"checkAddressRegisted(address)": "infinite",
+				"getAccounts(address)": "infinite",
+				"getArticles(address)": "infinite",
+				"getFriendRequests(address)": "infinite",
+				"getFriends(address)": "infinite",
+				"getMessages(address,address)": "infinite",
+				"getMsgAccount(address)": "infinite",
+				"getUser(address)": "infinite",
+				"setAccountVerified(address,bool)": "infinite",
+				"setAccounts(address,address)": "infinite",
+				"setAddressVerified(address,bool)": "infinite",
+				"setArticles(address,string memory,string memory)": "infinite",
+				"setFriend(address,address,string memory)": "infinite",
+				"setFriendByaddress(address,address,string memory)": "infinite",
+				"setMessages(address,address,string memory)": "infinite",
+				"setUserByAddress(address,string memory,string memory,uint256)": "infinite"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": [
+		{
+			"inputs": [],
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "sender",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "admin",
+					"type": "address"
+				}
+			],
+			"name": "OnlyAdminError",
+			"type": "event"
+		}
+	]
+}

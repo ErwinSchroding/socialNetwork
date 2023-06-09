@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "admin",
+						"type": "address"
+					}
+				],
+				"name": "OnlyAdminError",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"data/DataContract.sol": "DataContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"data/DataContract.sol": {
+			"keccak256": "0xc85b1085757c24d79fd8ea6f6b2b966af43e8e060b00ac976ad9578506227bf9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://45f8faeecfbb07b3442c4b66cbe4810e495857f6906051cc67e22e4167831646",
+				"dweb:/ipfs/QmUWBuWrnJAyaidrEnGKgv6idqyLCXogkxGshqupuSg9DR"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,103 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {
+				"@_119": {
+					"entryPoint": null,
+					"id": 119,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				}
+			},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b5033600a60006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603f80605e6000396000f3fe6080604052600080fdfea2646970667358221220fd557d66eab64bef74a7264517a022d192b5bee6df139106b8f0ef6fa332a6ab64736f6c63430008120033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLER PUSH1 0xA PUSH1 0x0 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP PUSH1 0x3F DUP1 PUSH1 0x5E PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 REVERT SSTORE PUSH30 0x66EAB64BEF74A7264517A022D192B5BEE6DF139106B8F0EF6FA332A6AB64 PUSH20 0x6F6C634300081200330000000000000000000000 ",
+			"sourceMap": "422:6714:1:-:0;;;;;;;;;;;;;4190:10:0;4182:5;;:18;;;;;;;;;;;;;;;;;;422:6714:1;;;;;;"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "6080604052600080fdfea2646970667358221220fd557d66eab64bef74a7264517a022d192b5bee6df139106b8f0ef6fa332a6ab64736f6c63430008120033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 REVERT SSTORE PUSH30 0x66EAB64BEF74A7264517A022D192B5BEE6DF139106B8F0EF6FA332A6AB64 PUSH20 0x6F6C634300081200330000000000000000000000 ",
+			"sourceMap": "422:6714:1:-:0;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "12600",
+				"executionCost": "24332",
+				"totalCost": "36932"
+			},
+			"internal": {
+				"addFriend(address,address,string memory)": "infinite",
+				"addFriendByAddress(address,address,string memory)": "infinite",
+				"getAccountByAddress(address)": "infinite",
+				"getArticlesByAccount(address)": "infinite",
+				"getFriendRequestsByAccount(address)": "infinite",
+				"getFriendsByAccount(address)": "infinite",
+				"getMessagesByAccount(address,address)": "infinite",
+				"getMsgAccountByAccount(address)": "infinite",
+				"getProfileByAccount(address)": "infinite",
+				"getProfileByAddress(address)": "infinite",
+				"join(address)": "infinite",
+				"registerUser(address,string memory,string memory,uint256)": "infinite",
+				"sendArticlesByAccount(address,string memory,string memory)": "infinite",
+				"sendMessageByAccount(address,address,string memory)": "infinite"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": [
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "sender",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "admin",
+					"type": "address"
+				}
+			],
+			"name": "OnlyAdminError",
+			"type": "event"
+		}
+	]
+}
